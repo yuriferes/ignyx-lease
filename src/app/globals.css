@@ -1,0 +1,136 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* shadcn semantic */
+    --background: 0 0% 100%;
+    --foreground: 240 8% 11%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 240 8% 11%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 240 8% 11%;
+
+    --primary: 220 75% 19%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 240 6% 96%;
+    --secondary-foreground: 240 8% 11%;
+
+    --muted: 240 6% 96%;
+    --muted-foreground: 240 4% 44%;
+
+    --accent: 220 40% 96%;
+    --accent-foreground: 220 75% 19%;
+
+    --destructive: 4 100% 59%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 240 5% 91%;
+    --input: 240 5% 91%;
+    --ring: 202 60% 53%;
+
+    --radius: 0.625rem;
+
+    /* Brand iGNYX (Atmosphere+) */
+    --brand-navy: #0c2452;
+    --brand-navy-hover: #0a1e45;
+    --brand-navy-subtle: #f0f3f9;
+    --brand-accent-green: #5ac97c;
+    --brand-accent-teal: #55b1ac;
+    --brand-accent-blue: #3f9ece;
+    --brand-gradient: linear-gradient(180deg, #5ac97c 0%, #55b1ac 50%, #3f9ece 100%);
+
+    --bg: #ffffff;
+    --bg-elevated: #fafafa;
+    --surface: #f5f5f7;
+    --surface-hover: #efeff3;
+    --border: #e5e5ea;
+    --border-strong: #d2d2d7;
+    --text-primary: #1d1d1f;
+    --text-secondary: #6e6e73;
+    --text-tertiary: #86868b;
+    --text-disabled: #aeaeb2;
+    --text-on-brand: #ffffff;
+
+    --success: #34c759;
+    --success-bg: #e8f9ee;
+    --warning: #ff9500;
+    --warning-bg: #fff4e5;
+    --error: #ff3b30;
+    --error-bg: #ffe8e6;
+    --info: #3f9ece;
+    --info-bg: #e8f2fa;
+
+    --radius-sm: 6px;
+    --radius-md: 10px;
+    --radius-lg: 14px;
+    --radius-xl: 20px;
+    --radius-full: 9999px;
+
+    --shadow-xs: 0 1px 2px rgba(16, 24, 40, 0.04);
+    --shadow-sm: 0 1px 3px rgba(16, 24, 40, 0.06), 0 1px 2px rgba(16, 24, 40, 0.04);
+    --shadow-md: 0 4px 8px -2px rgba(16, 24, 40, 0.06), 0 2px 4px -2px rgba(16, 24, 40, 0.04);
+    --shadow-lg: 0 12px 24px -4px rgba(16, 24, 40, 0.08), 0 4px 8px -2px rgba(16, 24, 40, 0.03);
+
+    --ease-apple: cubic-bezier(0.2, 0.8, 0.2, 1);
+
+    /* iGNYX palette (rgb triplet form for alpha) */
+    --ignyx-navy: 12 36 82;
+    --ignyx-navy-2: 10 30 69;
+    --ignyx-navy-3: 6 20 51;
+    --ignyx-green: 90 201 124;
+    --ignyx-green-soft: 168 227 186;
+    --ignyx-green-light: 234 248 239;
+    --ignyx-teal: 85 177 172;
+    --ignyx-teal-light: 227 242 241;
+    --ignyx-blue: 63 158 206;
+    --ignyx-blue-soft: 156 206 232;
+    --ignyx-blue-light: 234 244 250;
+    --ignyx-ink: 11 14 20;
+    --ignyx-ink-2: 49 54 63;
+    --ignyx-ink-3: 108 114 128;
+    --ignyx-ink-4: 156 161 171;
+    --ignyx-bg: 251 251 252;
+    --ignyx-bg-2: 244 244 246;
+    --ignyx-surface: 255 255 255;
+    --ignyx-line: 236 236 239;
+    --ignyx-line-2: 224 224 229;
+    --ignyx-success: 52 199 89;
+    --ignyx-warning: 255 149 0;
+    --ignyx-error: 255 59 48;
+    --ignyx-gold: 212 164 64;
+
+    --ignyx-shadow-sm: 0 1px 2px rgba(11, 14, 20, 0.04), 0 1px 1px rgba(11, 14, 20, 0.03);
+    --ignyx-shadow-md: 0 4px 12px -2px rgba(11, 14, 20, 0.06), 0 2px 6px -2px rgba(11, 14, 20, 0.04);
+    --ignyx-shadow-lg: 0 20px 40px -12px rgba(11, 14, 20, 0.1), 0 8px 16px -4px rgba(11, 14, 20, 0.04);
+    --ignyx-shadow-xl: 0 32px 60px -16px rgba(11, 14, 20, 0.18),
+      0 12px 24px -8px rgba(11, 14, 20, 0.06);
+  }
+
+  * {
+    @apply border-border-default;
+  }
+
+  html,
+  body {
+    @apply h-full;
+  }
+
+  body {
+    @apply bg-ignyx-bg text-ignyx-ink font-sans antialiased;
+    font-feature-settings: 'cv11', 'ss01';
+  }
+}
+
+@layer utilities {
+  .ignyx-scroll-hidden::-webkit-scrollbar {
+    display: none;
+  }
+  .ignyx-scroll-hidden {
+    scrollbar-width: none;
+  }
+}

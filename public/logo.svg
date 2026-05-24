@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 56" fill="none">
+  <g>
+    <rect x="0" y="12" width="36" height="32" rx="8" fill="#0C2452"/>
+    <path d="M11 22h14v4H11zM11 30h10v4H11z" fill="#5AC97C"/>
+  </g>
+  <text x="48" y="36" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Display', Inter, system-ui, sans-serif" font-size="22" font-weight="700" fill="#0C2452" letter-spacing="-0.5">
+    iGNYX <tspan font-weight="500" fill="#55B1AC">Lease</tspan>
+  </text>
+</svg>
