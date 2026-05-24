@@ -1,0 +1,14 @@
+import { UnderConstruction } from '../../_placeholder/under-construction';
+
+export default function FactoryStockPage(): JSX.Element {
+  return (
+    <UnderConstruction
+      title="Estoque · Fábrica"
+      breadcrumbs={[
+        { label: 'Dashboard', href: '/dashboard' },
+        { label: 'Fábrica', href: '/factory' },
+        { label: 'Estoque' },
+      ]}
+    />
+  );
+}
